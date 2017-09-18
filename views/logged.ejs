@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+<h1><center>Júlio César Fonseca de Paula Mussi  |   Currículo</h1></center>
+
+   <title></title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+.scroll input{
+  display: none;
+}
+.bloco{
+    width:100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.links{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+}
+.links label{
+  padding: 10px 0;
+  flex-grow: 1;
+  cursor: pointer;
+  transition: all .4s;
+  text-align: center;
+  font-family: 'monospace';
+  font-size: 100%;
+  color:#f808;
+}
+.links label:hover{
+    background-color: rgba(255, 255, 255,.2);
+}
+#quem{
+  background-color: #f000;
+}
+#forma{
+  background-color: #f000;
+}
+#cert{
+  background-color:#f000;
+}
+#expe{
+  background-color: #f000;
+}
+#cont{
+  background-color: #f000;
+}
+.scroll{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.sections{
+  transition: all .4s;
+}
+#rd_quem:checked ~ .sections{
+  margin-top: 0vh;
+}
+#rd_forma:checked ~ .sections{
+  margin-top: -100vh
+}
+#rd_cert:checked ~ .sections{
+  margin-top: -200vh
+}
+#rd_expe:checked ~ .sections{
+  margin-top: -300vh
+}
+#rd_cont:checked ~ .sections{
+  margin-top: -400vh
+}
+}
+</style>
+</head>
+<body>
+<nav class="links">
+    <label for="rd_quem">Quem sou eu</label>
+    <label for="rd_forma">Formação</label>
+    <label for="rd_cert">Certificações</label>
+    <label for="rd_expe">Experiência</label>
+    <label for="rd_cont">Contato</label>
+</nav>
+
+<div class="scroll">
+    <input type="radio" name="grupo" id="rd_quem">
+    <input type="radio" name="grupo" id="rd_forma">
+    <input type="radio" name="grupo" id="rd_cert">
+    <input type="radio" name="grupo" id="rd_expe">
+    <input type="radio" name="grupo" id="rd_cont">
+
+<section class="sections">
+    <section class="bloco" id="quem">
+      <br>Interesso-me por segurança digital, e todo o universo que esta envolve.</br> <br>Valorizo o trabalho equipe, e considero-me bom no mesmo.</br>
+      <br>Tenho como principal característica a constante busca por melhorar em tudo que faço e a incessante busca por conhecimento.</br>
+    </section>
+
+    <section class="bloco" id="forma">
+Graduando em Engenharia de Computação — Universidade Salvador
+    </section>
+
+    <section class="bloco" id="cert">
+RaspberryPI pelo DAECOMP – Universidade Salvador.
+<br>Conclusão do nível avançado de inglês pelo CCAA.</br>
+    </section>
+
+    <section class="bloco" id="expe">
+      Nível intermediário com as linguagens : C e Python.
+      <br> Nível básico de HTML, CSS, Node.js e Flask, bem como as distros de Linux.</br>
+
+    </section>
+
+    <section class="bloco" id="cont">
+      Rua Manoel Andrade 201, Salvador, Bahia, 41810-815.<br/> 
+      (75) 99277-5429<br/>
+      E-mail: jc.mussi@hotmail.com<br/>
+      Git Hub: https://github.com/Volksfeld
+    </section>
+
+
+</section>
+</body>
+</html>
